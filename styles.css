@@ -55,16 +55,11 @@ form {
 }
 
 body {
-   background-image: linear-gradient(100deg, black 20%, rgb(21, 0, 41));
+   background-image: linear-gradient(2000deg, black 20%, rgb(21, 0, 41));
 }
 
 * {
    font-family: 'Geologica', sans-serif;
-}
-
-button {
-   border: none;
-   border-radius: 40px;
 }
 
 .botaoLimpar {
@@ -100,4 +95,151 @@ input::placeholder {
    transform: translateX(-50%);
    border: none;
    white-space: nowrap;
+}
+
+@media screen and (max-width: 320px){
+
+   body {
+      background-image: linear-gradient(2000deg, black 20%, rgb(21, 00, 41));
+      width: 290px;
+      height: 100%;
+   }
+   form {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      margin-bottom: 0%;
+      padding-top: 6%;
+      left:53px;
+   }
+   
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height:10%;
+      top: 40%;
+      width: 50%;
+      margin: 0%;
+      
+   }   
+   .labelPrincipal {
+      position: relative;
+      font-size: 200%;
+      font-weight: bold;
+      width: 200%;
+      color: white;
+      margin-bottom: 1%;
+      transition: transform 200ms ease-in-out;
+      left: 70px;
+   }
+   
+   #cep {
+      margin-top: 10px;
+      border: none;
+      border-radius: 50px;
+      font-size: 100%;
+      font-weight: 0;
+      transition: transform 200ms ease-in-out;
+   }
+   #outputLogradouro,
+   #outputBairro,
+   #outputCidade,
+   #outputUF {
+   color: white;
+   font-size: 75%;
+   margin-top: 10px;
+   transition: transform 300ms ease-in-out;
+}
+.container1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 40%;
+   position: absolute;
+   left: 42%;
+   top: 10%;
+   transform: translateX(-50%);
+   border: none;
+   white-space: nowrap;
+}
+
+}
+@media screen and (max-width: 425px){
+
+   body {
+      background-image: linear-gradient(2000deg, black 20%, rgb(21, 00, 41));
+      width: 290px;
+      height: 100%;
+   }
+   form {
+      width: 400px;
+      height: 260px;
+      position: relative;
+      margin-bottom: 0%;
+      padding-top: 0%;
+      left:0px;
+      top: 10px;
+   }
+   
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height:130%;
+      top: -10%;
+      left: -5%;
+      width: 100%;
+      margin: 0%;
+      
+   }   
+   .labelPrincipal {
+      position: relative;
+      font-size: 310%;
+      font-weight: bold;
+      width: 100%;
+      color: white;
+      margin-bottom: 1%;
+      transition: transform 200ms ease-in-out;
+      left: 80px;
+   }
+   
+   #cep {
+      margin-top: 10px;
+      border: none;
+      border-radius: 50px;
+      font-size: 160%;
+      font-weight: 0;
+      transition: transform 200ms ease-in-out;
+
+   }
+   #outputLogradouro,
+   #outputBairro,
+   #outputCidade,
+   #outputUF {
+   color: white;
+   font-size: 100%;
+   margin-top: 10px;
+  
+   transition: transform 300ms ease-in-out;
+}
+.container1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 40%;
+   position: absolute;
+   left: 45%;
+   top: 20%;
+   transform: translateX(-50%);
+   border: none;
+   white-space: nowrap;
+   
+}
 }
